@@ -5,22 +5,55 @@
     /* font-size: 16px; */
 }
 
+body{
+    background: #c4c3c3;
+}
+
+
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
-    height: 100vh;
-    background: #3b3b3b;
+    background: #333333;
     color: white;
-    padding-top: 50px;
 }
 
-.new{
+.item__top{
     display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 19px;
+    column-gap: 19px;
+}
+
+.item__top__left{
+    flex-basis: 75%;
+}
+
+.item__top__right{
+    flex-basis: 24%;
+    display: flex;
+    flex-direction: column;
+    
+    row-gap: 19px;
+}
+
+.item__bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    row-gap: 19px;
+    /* column-gap: 19px; */
 }
 
 .item{
-    width: 300px;
     border-radius: 5px;
+    flex-basis: 24%;
 }
 .item img{
     width: 100%;
@@ -28,9 +61,9 @@
     vertical-align: bottom;
 }
 
-.item .item__content{
+ .item__content{
     padding: 12px 18px;
-    background: #333333;
+    background: #3b3b3b;
 }
 
 .item__content .tag{
@@ -56,3 +89,76 @@
     height: 15px;
     margin-right: 6px;
  }
+
+ .show__more{
+     margin-top: 20px;
+     text-align: center;
+ }
+
+ .show__more span{
+    border-radius: 5px;
+    border: 1px orange solid;
+    padding: 10px 50px;
+ }
+
+ /* FOOTER */
+
+ footer{
+     margin: 20px 0;
+ }
+
+
+ .logo{
+    display: flex;
+    justify-content: center;
+ }
+
+ .logo img{
+   width: 80px;
+   height: 28px;
+ }
+
+ .social{
+     margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+ }
+ .social img{
+    width: 32px;
+    height: 32px;
+ }
+
+
+ .list__menu__footer{
+     margin: 30px 0 0 0;
+     padding: 0;
+     list-style: none;
+     list-style-type: none;
+     text-align: center;
+ }
+
+ .list__menu__footer li{
+     display: inline-block;
+     margin: 0 20px;
+ }
+
+ .list__menu__footer li:hover{
+    border-bottom: 1px aqua solid;
+}
+
+ .list__menu__footer li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+}
+
+ /* END FOOTER */
+
+
+
+
+
